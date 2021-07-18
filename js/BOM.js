@@ -2,11 +2,10 @@
 
 // propiedades y eventos del BOM
 
-
 window.addEventListener("resize", e => {
 
     console.clear();
-    console.log("***evento Resize***"); // se ejecuta cuando cambiamos cambiamos la ventana
+    console.log("***evento Resize***"); // se ejecuta cuando cambiamos el tamaño de la ventana
 
     // tamaño de la ventana que ocupa la pagina web
     console.log(window.innerWidth);
@@ -54,7 +53,6 @@ document.addEventListener("DOMContentLoaded", e => {
 /* El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado, sin esperar hojas de estilo, images o respuestas de APIs*/
 
 
-
 // metodos del BOM
 
 const $btnAbrir = document.querySelector(".abrirVentana-btn"),
@@ -74,7 +72,6 @@ $btnCerrar.addEventListener("click", () => {
 $btnImprimir.addEventListener("click", () => {
     window.print();
 });
-
 
 
 // objetos del BOM: URL, historial y navegador
@@ -103,13 +100,13 @@ history.go(-1) // hacia atras
 
 /* 
 console.log(navigator);
-console.log(navigator.connection); // nos da informacion sobre la coneccion del usuario
+console.log(navigator.connection); // nos da informacion sobre la conexion del usuario
 console.log(navigator.geolocation);
 console.log(navigator.mediaDevices);
 console.log(navigator.mimeTypes);
-console.log(navigator.onLine); // si el usuario perdio la coneccion sera false
+console.log(navigator.onLine); // si el usuario perdio la conexion sera false
 console.log(navigator.serviceWorker); // para poder hacer tu sitio web una aplicacion instalable
 console.log(navigator.storage);
-console.log(navigator.usb); // si esta activado al blo
+console.log(navigator.usb); // si esta activado al usb
 console.log(navigator.userAgent);
 */

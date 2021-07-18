@@ -1,4 +1,3 @@
-
 // manejadores de eventos
 
 const $cambiarBtn = document.querySelector(".cambiarFondo-btn"),
@@ -23,7 +22,6 @@ $removerBtn.addEventListener("click", () => {
 
 const saludar = nombre => console.log(`hola ${nombre}`);
 $cambiarBtn.addEventListener("click", () => saludar("alejandro")); // esta es la forma de asociar un evento a una funcion con pasaje de parametro
-
 
 
 // flujo de eventos
@@ -53,7 +51,6 @@ $divsEventos.forEach(div => {
 })
 
 
-
 // stopPropagation & preventDefault
 
 const $link = document.querySelector(".flujo-eventos a");
@@ -65,14 +62,7 @@ $link.addEventListener("click", e => {
 })
 
 
-
 // delegacion de eventos
-
-// En lugar de tener varios listeners, es mas eficiente asignarle solamente un "listener" al "document" y través de un condicional evaluamos quien origino el evento.
-
-// asignandole el evento al "document":
-// *no hace falta poner e.stopPropagation(); porque ya evitamos la propagacion de eventos
-// *no saldran errores a la hora de crear o borrar elementos del dom, ya que no puede haber "listener" de elementos que no estan cargados en el dom
 
 document.addEventListener("click", e => {
 
@@ -86,8 +76,6 @@ document.addEventListener("click", e => {
 })
 
 // matches da true si presiono un elemento con la clase que le paso
-
-
 
 // eventos de teclado
 
@@ -112,5 +100,4 @@ document.addEventListener("keyup", e => {
         let text = prompt("you can write what you want");
         console.log(text);
     }
-
 });
